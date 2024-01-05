@@ -1,14 +1,15 @@
-import React from 'react';
-// import {NavLink} from 'react'
+import { NavLink } from "react-router-dom";
 
-export default NavBar = () => {
+const NavBar = () => {
     return (
-        <nav className="w-screen h-10 border-4 border-red-400 text-green">
-            <ul>
-                <li>Home</li>
-                <li>My Work</li>
-                <li>Contact</li>
+        <nav className='w-screen h-14 fixed z-10 radial-green'>
+            <ul className='flex items-center justify-center pt-3 lg:gap-30 md:gap-20 gap-8'>
+                <li><NavLink>About</NavLink></li>
+                <li><NavLink>My Work</NavLink></li>
+                <li><NavLink>Contact</NavLink></li>
             </ul>
         </nav>
     );
 }
+
+export default NavBar;
