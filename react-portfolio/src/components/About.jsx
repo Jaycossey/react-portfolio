@@ -4,7 +4,7 @@ const About = () => {
     return (
         <>
         {/* Grid Container for static about section */}
-            <div className='w-screen h-screen bg-slate-500 grid grid-cols-2 grid-rows-5 p-8 text-center'>
+            <div className='w-screen h-screen bg-slate-500 grid grid-cols-2 grid-rows-5 p-8 text-center bg-port'>
                 
                 {/* Welcome Text Container */}
                 <div className="col-span-2 row-start-2 pr-40 pl-40">
@@ -13,11 +13,11 @@ const About = () => {
                 
                 {/* Profile photo container */}
                 <div className="row-span-2 col-start-1">
-                    <img className="w-80 h-80 border-8 border-purple-900 rounded-full ml-40 m-auto" src='./src/assets/profile.png' alt="Profile Photo" />
+                    <img className="w-80 h-80 border-8 border-purple-900 rounded-full ml-40 m-auto" src='./src/assets/images/profile.png' alt="Profile Photo" />
                 </div>
                 
                 {/* Tech Stack and soft skills */}
-                <div className="row-span-2 col-start-2 text-right mr-16 shadowBg">
+                <div className="row-span-3 col-start-2 text-right mr-16 shadowBg">
                     <p className="text-lg underline underline-offset-4 mb-6 mr-2">My Tech Stack</p>
                     <ul className="mr-5">
                         <li>HTML</li>

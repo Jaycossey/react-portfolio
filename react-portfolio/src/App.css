@@ -27,3 +27,11 @@
 .shadowBg {
     background-image: radial-gradient(ellipse at right, white 5%, transparent 60%);
 }
+
+/* PORTFOLIO STYLING  */
+
+.bg-port {
+    background-image: url('./assets/images/manada_background.png');
+    background-position: center;
+    background-size: cover;
+}
