@@ -1,3 +1,37 @@
+/* GLOBALS --------------------------------------------------------- */
+:root {
+    --purple: rgba(200, 10, 200, 0.4);
+    --purple-2: rgba(360, 100, 360, 0.4);
+}
+
+/* NAVBAR STYLING -------------------------------------------------- */
 .radial-green {
-    background-image: radial-gradient(ellipse at top, rgba(0, 255, 21, 0.2), transparent 60%);
+    background-image: radial-gradient(ellipse at top, var(--purple), transparent 60%);
+}
+
+.pending {
+    font-size: 1rem;
+    background-color: var(--purple);
+}
+
+.active {
+    font-size: 2rem;
+    border: 5px solid var(--purple);
+    border-top: none;
+    border-radius: 10px 10px 20px 20px;
+    padding: 5px;
+    background-color: var(--purple-2);
+}
+
+/* ABOUT STYLING */
+.shadowBg {
+    background-image: radial-gradient(ellipse at right, white 5%, transparent 60%);
+}
+
+/* PORTFOLIO STYLING  */
+
+.bg-port {
+    background-image: url('./assets/images/manada_background.png');
+    background-position: center;
+    background-size: cover;
 }
