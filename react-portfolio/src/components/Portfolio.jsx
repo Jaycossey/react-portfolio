@@ -4,6 +4,9 @@ import projectList from "../utils/projectObj";
 
 const Portfolio = () => {
     console.log(projectList);
+
+    // IMPORTANT NOTE FOR NEXT SESSION !!!! ---- GitHub has the root of this project, stored within its parent directory, double check this 
+    // ASAP
     
     // I need to now work out how to handle the changing of the projects. I can target them with projectList[i]
     // How do I iterate through? and What happens when i is at the length of the array 
