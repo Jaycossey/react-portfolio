@@ -2,6 +2,8 @@ const Presentation = (props) => {
     // custom className variable, used in switch case and parent div
     let customClasses;
 
+    console.log(props.project);
+
     // Switch case to determine styles for each presentation (size)
     switch(props.position) {
         case 'center':
@@ -22,7 +24,7 @@ const Presentation = (props) => {
         // Parent/Background container
         <div className={customClasses}>
             {/* Image of project */}
-            <img src="./src/assets/images/portfolioGen.png" 
+            <img src={props.project.image} 
                 alt="Screenshot of Code from the Main Presentation piece" 
                 className="w-full 
                     h-80 
@@ -31,13 +33,13 @@ const Presentation = (props) => {
                     border-purple-500" />
             
             {/* Title */}
-            <p className="underline underline-offset-4 mb-4 mt-1">Portfolio Generator</p>
+            <p className="underline underline-offset-4 mb-4 mt-1">{props.project.title}</p>
             
             {/* Description */}
-            <p>Node project to automate a presentation of 3 showcase projects.</p>
+            <p>{props.project.description}</p>
             
             {/* Tech Used */}
-            <p className="pt-2">Node.JS, JavaScript, HTML, CSS</p>
+            <p className="pt-2">{props.project.techStack}</p>
         </div>
     );
 }
