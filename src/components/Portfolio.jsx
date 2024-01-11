@@ -27,19 +27,31 @@ const Portfolio = () => {
     return (
         <>
             {/* Page Container */}
-            <div className="w-screen h-screen bg-port">
+            <div className="w-screen 
+                            h-screen 
+                            bg-port">
                 
                 {/* carousel display container */}
-                <div className="h-screen flex flex-row gap-20 m-auto text-center items-center justify-center">
+                <div className="h-screen 
+                                flex 
+                                flex-row 
+                                gap-20 
+                                m-auto 
+                                text-center 
+                                items-center 
+                                justify-center">
                     
                     {/* Portfolio piece [1], click to bring to focus */}
-                    <Presentation position="left" project={projectList[left]} />
+                    <Presentation position="left" 
+                                project={projectList[left]} />
                     
                     {/* Center focus Portfolio [2] These indexes will be important */}
-                    <Presentation position="center" project={projectList[i]} />
+                    <Presentation position="center" 
+                                project={projectList[i]} />
 
                     {/* Portfolio [3] 3rd shown half transparent */}
-                    <Presentation position="right" project={projectList[right]} />
+                    <Presentation position="right" 
+                                project={projectList[right]} />
                 </div>
 
             </div>

@@ -33,13 +33,22 @@ const Presentation = (props) => {
                     border-purple-500" />
             
             {/* Title */}
-            <p className="underline underline-offset-4 mb-4 mt-1">{props.project.title}</p>
+            <p className="underline 
+                        underline-offset-4 
+                        mb-4 
+                        mt-1">
+                {props.project.title}
+            </p>
             
             {/* Description */}
-            <p>{props.project.description}</p>
+            <p>
+                {props.project.description}
+            </p>
             
             {/* Tech Used */}
-            <p className="pt-2">{props.project.techStack}</p>
+            <p className="pt-2">
+                {props.project.techStack}
+            </p>
         </div>
     );
 }
