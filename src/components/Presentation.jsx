@@ -1,36 +1,25 @@
 const Presentation = (props) => {    
-    // custom className variable, used in switch case and parent div
-    let customClasses;
-
-    console.log(props.project);
-
-    // Switch case to determine styles for each presentation (size)
-    switch(props.position) {
-        case 'center':
-            customClasses = "border-2 border-purple-500 rounded-xl p-2 bg-slate-100 bg-opacity-60";
-            break;
-        case 'right':
-            customClasses = "border-2 border-purple-500 rounded-xl p-2 bg-slate-100 bg-opacity-60 scale-50";
-            break;
-        case 'left':
-            customClasses = "border-2 border-purple-500 rounded-xl p-2 bg-slate-100 bg-opacity-60 scale-50";
-            break;
-        default:
-            console.log(`position not set`);
-            break;
-    }
 
     return (
         // Parent/Background container
-        <div className={customClasses}>
+        <div className="bg-slate-500
+                        bg-opacity-50
+                        border-4
+                        rounded-2xl
+                        border-purple-500
+                        p-2
+                        w-80
+                        h-100
+                        text-purple-700">
+
             {/* Image of project */}
             <img src={props.project.image} 
                 alt="Screenshot of Code from the Main Presentation piece" 
-                className="w-full 
-                    h-80 
-                    rounded-lg
-                    border-4
-                    border-purple-500" />
+                className="h-40
+                        m-auto
+                        rounded-md
+                        border-2
+                        border-purple-400" />
             
             {/* Title */}
             <p className="underline 
