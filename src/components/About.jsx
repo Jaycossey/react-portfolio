@@ -1,36 +1,27 @@
+import Card from './Card';
 import text from '../textFiles/text';
 
+// Also dont like this layout -- need to think how to show and hold this information, create a reusable card element and then handle
+// text data by passing in as props.
+
+// About me component
 const About = () => {
+
     return (
         <>
         {/* Grid Container for static about section */}
             <div className='w-screen 
                             h-screen 
                             bg-slate-500 
-                            grid 
-                            grid-cols-2 
-                            grid-rows-5 
-                            p-8 
+                            p-20 
                             text-center 
                             bg-port'>
                 
                 {/* Welcome Text Container */}
-                <div className="col-span-2 
-                                row-start-2
-                                pr-40 
-                                pl-40">
-                    
-                    <p className='bg-violet-400
-                                    p-10
-                                    text-black
-                                    rounded-3xl'>
-                        {text.about}
-                    </p>
-                </div>
+                <Card text={text.about} />
                 
                 {/* Profile photo container */}
-                <div className="row-span-2 
-                                col-start-1">
+                <div className="">
 
                     <img className="w-80 
                                     h-80 
