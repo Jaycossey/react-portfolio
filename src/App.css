@@ -23,6 +23,12 @@
     background-color: var(--purple-2);
 }
 
+nav,
+.navlink,
+.active {
+    cursor: url('./assets/icons/cursor-icon.png'), auto;
+}
+
 /* ABOUT STYLING */
 .shadowBg {
     background-image: radial-gradient(ellipse at right, white 5%, transparent 60%);
@@ -34,4 +40,51 @@
     background-image: url('./assets/images/manada_background.png');
     background-position: center;
     background-size: cover;
+}
+
+.animationCard {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    transform: scale(0.6);
+}
+
+.animationCard:hover {
+    transform: rotate(2deg) scale(0.7);
+    z-index: 10 !important;
+    transition-duration: 100ms;
+    cursor: url('./assets/icons/cursor-icon.png'), auto;
+}
+
+.animationCard:nth-child(2) {
+    margin-left: 120px;
+    z-index: 5;
+}
+
+.animationCard:nth-child(3) {
+    z-index: 4;
+    margin-left: 220px;
+}
+
+.animationCard:nth-child(4) {
+    z-index: 3;
+    margin-left: 320px;
+}
+.animationCard:nth-child(5) {
+    z-index: 2;
+    margin-left: 420px;
+}
+.animationCard:nth-child(6) {
+    z-index: 1;
+    margin-left: 520px;
+}
+
+#showcase {
+    position: relative;
+    transform: scale(1.4);
+    margin: auto;
+    grid-row: 1 / -1;
+    grid-column: 2;
 }
