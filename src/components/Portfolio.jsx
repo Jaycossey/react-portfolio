@@ -1,17 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Presentation from './Presentation';
 import projectList from "../utils/projectObj";
 import Card from './Card';
 import text from '../textFiles/text';
 
 const Portfolio = () => {
-    // console.log(projectList);
+    // Set state for currently displayed (main/selected) project
     const [current, setCurrent] = useState(projectList[0]);
 
+    // useEffect to trigger animation of cards, need to "swap" the current card, or at least give the appearance that that is the case
+    useEffect(() => {
+        console.log("UseEffect Tick", current.title);
+    }, [current]);
+
+    // handle click to swap focused project
     const handleClick = (clickedProject) => {
-        if(event.target.id === 'showcase') console.log("click");
         setCurrent(clickedProject);
     }
+
+    // handle opening of project links
+    const openLink = () => {
+        console.log("Clicked mainDisp", current.title);
+    }
+
 
     return (
         <>
@@ -36,7 +47,7 @@ const Portfolio = () => {
                 })}
 
                 {/* Main Presentation Project */}
-                <Presentation id="showcase" project={current} />
+                <Presentation id="showcase" project={current} onClick={openLink} />
 
             </div>
 
