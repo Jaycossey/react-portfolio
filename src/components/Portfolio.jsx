@@ -5,7 +5,7 @@ import Card from './Card';
 import text from '../textFiles/text';
 
 const Portfolio = () => {
-    console.log(projectList);
+    // console.log(projectList);
     const [current, setCurrent] = useState(projectList[0]);
 
     return (
@@ -26,7 +26,10 @@ const Portfolio = () => {
                 {/* Use Map to create an array of portfolio cards */}
                 {projectList.map((data) => {
                     return (
-                        <Presentation project={data} />
+                        <Presentation key={data.key} project={data} onClick={() => {
+                            setCurrent(data);
+                            console.log("click");
+                        }} />
                     )
                 })}
 
