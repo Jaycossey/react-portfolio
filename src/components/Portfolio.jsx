@@ -8,6 +8,11 @@ const Portfolio = () => {
     // console.log(projectList);
     const [current, setCurrent] = useState(projectList[0]);
 
+    const handleClick = (clickedProject) => {
+        if(event.target.id === 'showcase') console.log("click");
+        setCurrent(clickedProject);
+    }
+
     return (
         <>
             {/* Page Container */}
@@ -22,13 +27,11 @@ const Portfolio = () => {
                 
                 {/* Intro to portfolio text */}
                 <Card text={text.port} />
-                                    
+
                 {/* Use Map to create an array of portfolio cards */}
                 {projectList.map((data) => {
                     return (
-                        <Presentation key={data.key} project={data} onClick={() => {
-                            setCurrent(data);
-                        }} />
+                        <Presentation key={data.key} project={data} onClick={handleClick} />
                     )
                 })}
 

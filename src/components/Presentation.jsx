@@ -1,14 +1,6 @@
 const Presentation = (props) => {
 
-    const handleClick = () => { 
-        if (event.target.id === 'showcase') {
-            console.log("Show, setup link");
-        }
-
-        // if () {
-        //     console.log("Sort out anim")
-        // }
-    }
+    const projects = props.project;
 
     return (
         // Parent/Background container
@@ -23,7 +15,7 @@ const Presentation = (props) => {
                         shadow-2xl 
                         shadow-black
                         animationCard"
-            onClick={handleClick}>
+            onClick={() => props.onClick(projects)}>
 
             {/* Image of project */}
             <img src={props.project.image} 
