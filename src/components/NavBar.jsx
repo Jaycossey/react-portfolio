@@ -7,21 +7,21 @@ const NavBar = () => {
                 <NavLink 
                     to="/About"
                     className={({isActive, isPending}) =>
-                        isPending ? "pending" : isActive ? "active" : ""
+                        isPending ? "pending" : isActive ? "active" : "navlink"
                     }
                 ><li>About</li></NavLink>
 
                 <NavLink 
                     to="/*"
                     className={({isActive, isPending}) =>
-                        isPending ? "pending" : isActive ? "active" : ""
+                        isPending ? "pending" : isActive ? "active" : "navlink"
                     }
                 ><li>My Work</li></NavLink>
                 
                 <NavLink 
                     to="/Contact"
                     className={({isActive, isPending}) =>
-                        isPending ? "pending" : isActive ? "active" : ""
+                        isPending ? "pending" : isActive ? "active" : "navlink"
                     }
                 ><li>Contact</li></NavLink>
                 

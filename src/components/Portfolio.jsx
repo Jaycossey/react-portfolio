@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import Presentation from './Presentation';
 import projectList from "../utils/projectObj";
+import Card from './Card';
+import text from '../textFiles/text';
 
 const Portfolio = () => {
-    console.log(projectList);
+    // console.log(projectList);
+    const [current, setCurrent] = useState(projectList[0]);
 
     return (
         <>
@@ -11,32 +14,29 @@ const Portfolio = () => {
             <div className="w-screen 
                             h-screen 
                             bg-port
-                            p-20">
+                            p-20 
+                            overflow-hidden
+                            grid
+                            grid-cols-2
+                            grid-rows-2">
                 
-                {/* carousel display container */}
-                <div className="h-screen 
-                                flex 
-                                flex-row 
-                                gap-20 
-                                m-auto 
-                                text-center 
-                                items-center 
-                                justify-center">
-                    
-                    {/* Portfolio piece [1], click to bring to focus */}
-                    <Presentation position="left" 
-                                project={projectList[0]} />
-                    
-                    {/* Center focus Portfolio [2] These indexes will be important */}
-                    <Presentation position="center" 
-                                project={projectList[1]} />
+                {/* Intro to portfolio text */}
+                <Card text={text.port} />
+                                    
+                {/* Use Map to create an array of portfolio cards */}
+                {projectList.map((data) => {
+                    return (
+                        <Presentation key={data.key} project={data} onClick={() => {
+                            setCurrent(data);
+                        }} />
+                    )
+                })}
 
-                    {/* Portfolio [3] 3rd shown half transparent */}
-                    <Presentation position="right" 
-                                project={projectList[2]} />
-                </div>
+                {/* Main Presentation Project */}
+                <Presentation id="showcase" project={current} />
 
             </div>
+
         </>
         
     );

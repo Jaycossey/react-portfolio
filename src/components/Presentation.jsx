@@ -1,16 +1,29 @@
-const Presentation = (props) => {    
+const Presentation = (props) => {
+
+    const handleClick = () => { 
+        if (event.target.id === 'showcase') {
+            console.log("Show, setup link");
+        }
+
+        // if () {
+        //     console.log("Sort out anim")
+        // }
+    }
 
     return (
         // Parent/Background container
-        <div className="bg-slate-500
-                        bg-opacity-50
+        <div id={props.id}
+            className="bg-slate-200
+                        bg-opacity-80
                         border-4
                         rounded-2xl
                         border-purple-500
                         p-2
-                        w-80
-                        h-100
-                        text-purple-700">
+                        text-purple-800 
+                        shadow-2xl 
+                        shadow-black
+                        animationCard"
+            onClick={handleClick}>
 
             {/* Image of project */}
             <img src={props.project.image} 

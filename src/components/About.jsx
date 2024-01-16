@@ -1,66 +1,43 @@
 import Card from './Card';
 import text from '../textFiles/text';
+import profile from '../assets/images/profile.png';
 
 // Also dont like this layout -- need to think how to show and hold this information, create a reusable card element and then handle
 // text data by passing in as props.
 
 // About me component
 const About = () => {
+    const techList = "Tech Stack\nHTML\nCSS\nJavaScript\nNode.Js\nReact.JS\njQuery\nGit\nGitHub\n";
 
     return (
         <>
-        {/* Grid Container for static about section */}
+        {/* Flex Container for static about section */}
             <div className='w-screen 
                             h-screen 
                             bg-slate-500 
                             p-20 
                             text-center 
-                            bg-port'>
-                
-                {/* Welcome Text Container */}
-                <Card text={text.about} />
+                            bg-port
+                            grid
+                            grid-cols-2
+                            grid-rows-2
+                            gap-10'>
                 
                 {/* Profile photo container */}
-                <div className="">
+                <img src={profile}
+                    className='w-80
+                                h-80
+                                rounded-full
+                                border-4
+                                border-purple-500
+                                shadow-xl' />
 
-                    <img className="w-80 
-                                    h-80 
-                                    border-8 
-                                    border-purple-900 
-                                    rounded-full 
-                                    ml-40 
-                                    m-auto" 
-                        src='./src/assets/images/profile.png' 
-                        alt="Profile Photo" />
-                </div>
-                
-                {/* Tech Stack and soft skills */}
-                <div className="row-span-3 
-                                col-start-2 
-                                text-right 
-                                mr-16 
-                                shadowBg">
-                    
-                    <p className="text-lg 
-                                underline 
-                                underline-offset-4 
-                                mb-6 
-                                mr-2">My Tech Stack</p>
-                    
-                    <ul className="mr-5">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript (ES6)</li>
-                        <li>Node.JS</li>
-                        <li>React.JS</li>
-                        <li>npm</li>
-                        <li>TailwindCSS</li>
-                        <li>BootstrapCSS</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                    </ul>
-                    
-                </div>
+                {/* Welcome Text Container */}
+                <Card text={text.about} className='' />
+
+                {/* Tech Stack container */}
+                <Card text={techList} />
+
             </div>
         </>
     );
