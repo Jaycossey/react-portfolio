@@ -28,7 +28,6 @@ const Portfolio = () => {
                     return (
                         <Presentation key={data.key} project={data} onClick={() => {
                             setCurrent(data);
-                            console.log("click");
                         }} />
                     )
                 })}
