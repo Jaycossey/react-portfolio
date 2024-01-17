@@ -18,9 +18,9 @@ const Portfolio = () => {
         setCurrent(clickedProject);
     }
 
-    // handle opening of project links
+    // handle opening of project links in new tab
     const openLink = () => {
-        console.log("Clicked mainDisp", current.title);
+        window.open(current.link, '_blank', 'noopener', 'noreferrer');
     }
 
 

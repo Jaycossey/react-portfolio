@@ -54,7 +54,7 @@ nav,
 .animationCard:hover {
     transform: rotate(2deg) scale(0.7);
     z-index: 10 !important;
-    transition-duration: 100ms;
+    transition-duration: 200ms;
     cursor: url('./assets/icons/cursor-icon.png'), auto;
 }
 
