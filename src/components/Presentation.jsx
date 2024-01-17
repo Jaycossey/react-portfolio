@@ -1,5 +1,6 @@
+// Presentation component to store and handle projects on display
 const Presentation = (props) => {
-
+    // copy of project to use with onclick handlers
     const projects = props.project;
 
     return (

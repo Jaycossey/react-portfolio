@@ -23,7 +23,6 @@ const Portfolio = () => {
         window.open(current.link, '_blank', 'noopener', 'noreferrer');
     }
 
-
     return (
         <>
             {/* Page Container */}

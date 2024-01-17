@@ -1,3 +1,4 @@
+// Array of project objects
 const projectList = [
     {
         title: "Portfolio Generator",
