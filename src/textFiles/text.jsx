@@ -2,7 +2,8 @@
 const text = {
     about: "Hello World! My name is Ian, I am a passionate and versatile software developer with a keen focus on full stack development and game development. My expertise lies in crafting seamless and engaging user experiences through specialized front-end web development. Delving deep into the world of JavaScript, I have honed my skills in various frameworks, including React, Node.js, and jQuery. My commitment to staying at the forefront of web technologies allows me to create dynamic and responsive applications that push the boundaries of user interaction. Proficient in CSS, I leverage frameworks such as Tailwind and Bootstrap to streamline the design process and ensure a polished, visually appealing final product. My journey in software development is not just about writing code; it's about creating immersive digital experiences that captivate users. With a strong foundation in front-end technologies and a passion for pushing the boundaries of innovation, I am dedicated to contributing to the ever-evolving landscape of web and game development. Whether it's building intuitive interfaces or crafting immersive gaming environments, I bring a blend of technical expertise and creative problem-solving to every project I undertake.",
     contact: "If you would like to work with me, please follow the links below",
-    port: "Hover over and click the project you would like to see."
+    port: "Hover over and click the project you would like to see.",
+    techStack: "Tech Stack: HTML | CSS | JavaScript | Node.JS | React.JS | jQuery | BootstrapCSS | TailwindCSS | Git | GitHub"
 }
 
 export default text;

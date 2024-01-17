@@ -7,7 +7,6 @@ import profile from '../assets/images/profile.png';
 
 // About me component
 const About = () => {
-    const techList = "Tech Stack\nHTML\nCSS\nJavaScript\nNode.Js\nReact.JS\njQuery\nGit\nGitHub\n";
 
     return (
         <>
@@ -19,9 +18,9 @@ const About = () => {
                             text-center 
                             bg-port
                             grid
-                            grid-cols-2
-                            grid-rows-2
-                            gap-10'>
+                            grid-cols-1
+                            grid-rows-4
+                            gap-5'>
                 
                 {/* Profile photo container */}
                 <img src={profile}
@@ -30,13 +29,16 @@ const About = () => {
                                 rounded-full
                                 border-4
                                 border-purple-500
+                                m-auto
+                                row-span-2
+                                shadow-black
                                 shadow-xl' />
 
                 {/* Welcome Text Container */}
-                <Card text={text.about} className='' />
+                <Card text={text.about} />
 
                 {/* Tech Stack container */}
-                <Card text={techList} />
+                <Card text={text.techStack} />
 
             </div>
         </>

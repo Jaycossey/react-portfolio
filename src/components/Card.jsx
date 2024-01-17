@@ -9,6 +9,7 @@ const Card = (props) => {
                         border-4
                         border-purple-500
                         text-purple-800
+                        text-center
                         p-5
                         shadow-black
                         shadow-2xl">
