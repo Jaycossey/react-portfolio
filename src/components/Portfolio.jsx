@@ -1,26 +1,33 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Presentation from './Presentation';
 import projectList from "../utils/projectObj";
 import Card from './Card';
 import text from '../textFiles/text';
+import animateSwap from '../utils/animateSwap';
 
 const Portfolio = () => {
     // Set state for currently displayed (main/selected) project
-    const [current, setCurrent] = useState(projectList[0]);
+    const [currentShow, setCurrentShow] = useState(projectList[0]);
+
+    // set up ref for showcase component
+    const showcaseRef = useRef(null);
+    const directionRef = useRef(null);
 
     // useEffect to trigger animation of cards, need to "swap" the current card, or at least give the appearance that that is the case
     useEffect(() => {
-        console.log("UseEffect Tick", current.title);
-    }, [current]);
+        // call animation to "swap" the divs.
+        animateSwap(showcaseRef.current, directionRef.current);
+    }, [currentShow]);
 
     // handle click to swap focused project
     const handleClick = (clickedProject) => {
-        setCurrent(clickedProject);
+        setCurrentShow(clickedProject);
     }
 
     // handle opening of project links in new tab
     const openLink = () => {
-        window.open(current.link, '_blank', 'noopener', 'noreferrer');
+        // LINK TAGS BROWSER ROUTER REACT ROUTER
+        window.open(currentShow.link, '_blank', 'noopener', 'noreferrer');
     }
 
     return (
@@ -41,17 +48,22 @@ const Portfolio = () => {
                 {/* Use Map to create an array of portfolio cards */}
                 {projectList.map((data) => {
                     return (
-                        <Presentation key={data.key} project={data} onClick={handleClick} />
+                        <Presentation key={data.key} 
+                                    project={data} 
+                                    onClick={handleClick}
+                                    // pass direction ref to handle bounding client rect for animation direction
+                                    ref={directionRef} />
                     )
                 })}
 
-                {/* Main Presentation Project */}
-                <Presentation id="showcase" project={current} onClick={openLink} />
+                {/* Main Presentation Project, pass ref as props to target for animation */}
+                <Presentation id="showcase" 
+                            project={currentShow} 
+                            ref={showcaseRef} 
+                            onClick={openLink} />
 
             </div>
-
         </>
-        
     );
 }
 
