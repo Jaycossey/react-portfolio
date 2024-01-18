@@ -20,9 +20,9 @@ const animateSwap = (startpoint, endpoint) => {
     const yTrans = Math.floor(startY - endY);
     console.log(`translate\nx: ${xTrans}, y: ${yTrans}`);
 
-    const firstTransform = `translate(-${xTrans}px, -${yTrans}px)`;
-    startpoint.style.transitionDuration = '2s';
-    startpoint.style.transform = firstTransform;
+    startpoint.style.transitionDuration = '1s';
+    startpoint.style.transform = `translate(-${startX}px, ${endY}px)`;
+    startpoint.style.scale = "0.2";
 
 }
 
