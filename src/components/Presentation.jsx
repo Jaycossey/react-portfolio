@@ -1,11 +1,16 @@
+// import forwardRef to handle showcase animation manipulation
+import { forwardRef } from "react";
+
 // Presentation component to store and handle projects on display
-const Presentation = (props) => {
+const Presentation = forwardRef((props, ref) => {
     // copy of project to use with onclick handlers
     const projects = props.project;
 
     return (
         // Parent/Background container
         <div id={props.id}
+            // pass ref to handle showcase animation 
+            ref={ref}
             className="bg-slate-200
                         bg-opacity-80
                         border-4
@@ -46,6 +51,6 @@ const Presentation = (props) => {
             </p>
         </div>
     );
-}
+});
 
 export default Presentation;
