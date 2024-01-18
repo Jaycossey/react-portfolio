@@ -27,6 +27,7 @@ nav,
 .navlink,
 .active {
     cursor: url('./assets/icons/cursor-icon.png'), auto;
+    color: white;
 }
 
 /* ABOUT STYLING */
