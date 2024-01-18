@@ -9,17 +9,20 @@ const animateSwap = (startpoint, endpoint) => {
     const endX = endpointCoord.x;
     const endY = endpointCoord.y;
 
-    console.log(startpoint);
-
-    console.log(startX, startY);
-    console.log(endX, endY);
-
     // Now I have the start and end points, I need to get startpoint to translate its own values minus the endpoint
     // then I need to add it back
 
-    const firstTransform = `transform(${endX}px, ${endY}px)`;
+    // ok, so translate works by taking the x and y pixel amount, how do I know how far the element needs to move? 
+
+    // by taking the starting position and minusing the end poisition
+
+    const xTrans = Math.floor(startX - endX);
+    const yTrans = Math.floor(startY - endY);
+    console.log(`translate\nx: ${xTrans}, y: ${yTrans}`);
+
+    const firstTransform = `translate(-${xTrans}px, -${yTrans}px)`;
+    startpoint.style.transitionDuration = '2s';
     startpoint.style.transform = firstTransform;
-    startpoint.style.transitionDuration = 'all 2s';
 
 }
 
