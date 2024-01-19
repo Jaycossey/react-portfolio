@@ -34,6 +34,9 @@ const About = () => {
                                 shadow-xl
                                 relative' />
 
+                {/* Hello Text */}
+                <Card text={text.hello} />
+
                 {/* Welcome Text Container */}
                 <Card text={text.about} />
 

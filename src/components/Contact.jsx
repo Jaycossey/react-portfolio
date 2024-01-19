@@ -18,11 +18,11 @@ const Contact = () => {
                 {/* Card with contact text */}
                 <Card text={text.contact} />
                                 
-                {/* Canvas Elements for spritesheet animations */}
+                {/* Canvas Elements for spritesheet animations
                 <Canvas spriteSheet="helloTest" 
                         frameRate="7" 
                         width="300px" 
-                        height="200px" />
+                        height="200px" /> */}
 
             </div>
         </>
