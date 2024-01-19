@@ -4,7 +4,7 @@ const Canvas = (props) => {
 
     // props are: spritesheet(need to target pathname), framerate(default frames have always been 7, need to work out offset or whether to handle different)
     // width of canvas and height of canvas
-    console.log(props);
+    // console.log(props);
 
     return (
         <canvas width={props.width} 
