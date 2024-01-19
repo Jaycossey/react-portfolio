@@ -2,11 +2,16 @@ import Card from './Card';
 import Canvas from './Canvas';
 import text from '../textFiles/text';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faSquareGithub, faLinkedin, faStackOverflow, faGitSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 // Contact component, this will hold 3 animations as well as contact information
 const Contact = () => {
+
+    const copyToClip = () => {
+        navigator.clipboard.writeText('jaycossey@live.com');
+        console.log("Copied To Clipboard");
+    }
 
     // Return HTML 
     return (
@@ -16,7 +21,8 @@ const Contact = () => {
                             h-screen 
                             bg-slate-700 
                             bg-port
-                            p-20">
+                            p-10
+                            pt-20">
 
                 {/* Card with contact text */}
                 <Card text={text.contact} />
@@ -27,35 +33,45 @@ const Contact = () => {
                                 p-10'>
 
                     {/* Icons within their respective anchors */}
-                    <FontAwesomeIcon icon={faSquareGithub} 
-                                    className='fa-2xl 
-                                                m-2 
-                                                drop-shadow 
-                                                text-purple-500 
-                                                hover:scale-110 
-                                                cursorIcon' />
-                    <FontAwesomeIcon icon={faLinkedin} 
-                                    className='fa-2xl 
-                                                m-2 
-                                                drop-shadow 
-                                                text-purple-500 
-                                                hover:scale-110 
-                                                cursorIcon' />
-                    <FontAwesomeIcon icon={faStackOverflow} 
-                                    className='fa-2xl 
-                                                m-2 
-                                                drop-shadow 
-                                                text-purple-500 
-                                                hover:scale-110 
-                                                cursorIcon' />
-                    <FontAwesomeIcon icon={faEnvelope} 
-                                    className='fa-2xl 
-                                                m-2 
-                                                drop-shadow 
-                                                text-purple-500 
-                                                hover:scale-110 
-                                                cursorIcon' />
+                    <a href="https://www.linkedin.com/in/ian-j-scott/" target="_blank" referrer="noreferrer noopener">
+                        <FontAwesomeIcon icon={faLinkedin} 
+                                        className='fa-2xl 
+                                                    m-2 
+                                                    drop-shadow 
+                                                    text-purple-500 
+                                                    hover:scale-110 
+                                                    cursorIcon' />
+                    </a>
+
+                    <a href="https://github.com/Jaycossey" target="_blank" referrer="noreferrer noopener">
+                        <FontAwesomeIcon icon={faGithubSquare} 
+                                        className='fa-2xl 
+                                                    m-2 
+                                                    drop-shadow 
+                                                    text-purple-500 
+                                                    hover:scale-110 
+                                                    cursorIcon' />
+                    </a>
                     
+                    <a href="https://stackoverflow.com/users/20585015/jaycossey" target="_blank" referrer="noreferrer noopener">
+                        <FontAwesomeIcon icon={faStackOverflow} 
+                                        className='fa-2xl 
+                                                    m-2 
+                                                    drop-shadow 
+                                                    text-purple-500 
+                                                    hover:scale-110 
+                                                    cursorIcon' />
+                    </a>
+
+                    <a href="#" id="emailCopy" onClick={copyToClip}>
+                        <FontAwesomeIcon icon={faEnvelope} 
+                                        className='fa-2xl 
+                                                    m-2 
+                                                    drop-shadow 
+                                                    text-purple-500 
+                                                    hover:scale-110 
+                                                    cursorIcon' />
+                    </a>
                 </div>
                                 
                 {/* Canvas Elements for spritesheet animations

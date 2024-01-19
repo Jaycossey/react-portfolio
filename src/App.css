@@ -77,32 +77,32 @@ nav,
 
 #card1 {
     left: 0;
-    z-index: 0;
+    z-index: 5;
 }
 
 #card2 {
     left: 60px;
-    z-index: 1;
+    z-index: 4;
 }
 
 #card3 {
     left: 120px;
-    z-index: 2;
+    z-index: 3;
 }
 
 #card4 {
     left: 180px;
-    z-index: 3;
+    z-index: 2;
 }
 
 #card5 {
     left: 240px;
-    z-index: 4;
+    z-index: 1;
 }
 
 #card6 {
     left: 300px;
-    z-index: 5;
+    z-index: 0;
 }
 
 #showcase {
@@ -129,6 +129,7 @@ nav,
         bottom: 0px;
         margin: auto;
         margin-left: -20px;
+        z-index: 0;
     }
 
     #card2 {
@@ -136,6 +137,7 @@ nav,
         margin: auto;
         margin-left: -20px;
         left: 0;
+        z-index: 1;
     }
 
     #card3 {
@@ -143,6 +145,7 @@ nav,
         margin: auto;
         margin-left: -20px;
         left: 0;
+        z-index: 2;
     }
 
     #card4 {
@@ -150,6 +153,7 @@ nav,
         margin: auto;
         margin-left: -20px;
         left: 0;
+        z-index: 3;
     }
 
     #card5 {
@@ -157,6 +161,7 @@ nav,
         margin: auto;
         margin-left: -20px;
         left: 0;
+        z-index: 4;
     }
 
     #card6 {
@@ -164,5 +169,6 @@ nav,
         margin: auto;
         margin-left: -20px;
         left: 0;
+        z-index: 5;
     }
 }
