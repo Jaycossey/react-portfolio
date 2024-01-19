@@ -28,7 +28,8 @@ body {
 
 nav,
 .navlink,
-.active {
+.active,
+.cursorIcon {
     cursor: url('./assets/icons/cursor-icon.png'), auto;
     color: white;
 }
@@ -115,6 +116,12 @@ nav,
     margin-top: 20px;
     margin-bottom: 40px;
 }
+
+/* CONTACT STYLES --------------------------------------------------- */
+
+
+
+/* MEDIA QUERIES ---------------------------------------------------- */
 
 @media (width > 320px) and (width < 655px) {
     

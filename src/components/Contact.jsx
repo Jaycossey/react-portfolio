@@ -1,6 +1,9 @@
 import Card from './Card';
 import Canvas from './Canvas';
 import text from '../textFiles/text';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 // Contact component, this will hold 3 animations as well as contact information
 const Contact = () => {
@@ -17,6 +20,43 @@ const Contact = () => {
 
                 {/* Card with contact text */}
                 <Card text={text.contact} />
+
+                {/* Font awesome container for contact section */}
+                <div className='text-3xl 
+                                text-center
+                                p-10'>
+
+                    {/* Icons within their respective anchors */}
+                    <FontAwesomeIcon icon={faSquareGithub} 
+                                    className='fa-2xl 
+                                                m-2 
+                                                drop-shadow 
+                                                text-purple-500 
+                                                hover:scale-110 
+                                                cursorIcon' />
+                    <FontAwesomeIcon icon={faLinkedin} 
+                                    className='fa-2xl 
+                                                m-2 
+                                                drop-shadow 
+                                                text-purple-500 
+                                                hover:scale-110 
+                                                cursorIcon' />
+                    <FontAwesomeIcon icon={faStackOverflow} 
+                                    className='fa-2xl 
+                                                m-2 
+                                                drop-shadow 
+                                                text-purple-500 
+                                                hover:scale-110 
+                                                cursorIcon' />
+                    <FontAwesomeIcon icon={faEnvelope} 
+                                    className='fa-2xl 
+                                                m-2 
+                                                drop-shadow 
+                                                text-purple-500 
+                                                hover:scale-110 
+                                                cursorIcon' />
+                    
+                </div>
                                 
                 {/* Canvas Elements for spritesheet animations
                 <Canvas spriteSheet="helloTest" 
