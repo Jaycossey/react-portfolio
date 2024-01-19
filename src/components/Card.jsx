@@ -12,7 +12,8 @@ const Card = (props) => {
                         text-center
                         p-5
                         shadow-black
-                        shadow-2xl">
+                        shadow-2xl
+                        h-max">
 
             {/* Text Content */}
             {props.text}

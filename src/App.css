@@ -4,6 +4,10 @@
     --purple-2: rgba(360, 100, 360, 0.4);
 }
 
+body {
+    font-family: monospace;
+}
+
 /* NAVBAR STYLING -------------------------------------------------- */
 .radial-green {
     background-image: radial-gradient(ellipse at top, var(--purple), transparent 60%);
@@ -18,8 +22,7 @@
     font-size: 2rem;
     border: 3px solid var(--purple);
     border-top: none;
-    /* border-radius: 10px 10px 20px 20px; */
-    padding: 5px;
+    padding: 4px;
     background-color: var(--purple-2);
 }
 
@@ -27,6 +30,7 @@ nav,
 .navlink,
 .active {
     cursor: url('./assets/icons/cursor-icon.png'), auto;
+    color: white;
 }
 
 /* ABOUT STYLING */
@@ -38,18 +42,19 @@ nav,
 
 .bg-port {
     background-image: url('./assets/images/manada_background.png');
-    background-position: center;
+    background-position: fixed;
     background-size: cover;
 }
 
 .animationCard {
-    height: 400px;
-    width: 400px;
-    position: absolute;
     text-align: center;
-    bottom: 10px;
+    /* bottom: -160px; */
+    /* position: absolute; */
+    margin: auto;
+    /* margin-left: -20px; */
     transform: scale(0.6);
 }
+
 
 .animationCard:hover {
     transform: rotate(2deg) scale(0.7);
@@ -58,33 +63,99 @@ nav,
     cursor: url('./assets/icons/cursor-icon.png'), auto;
 }
 
-.animationCard:nth-child(2) {
-    margin-left: 120px;
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+
+#card1 {
+    left: 0;
+    z-index: 0;
+}
+
+#card2 {
+    left: 60px;
+    z-index: 1;
+}
+
+#card3 {
+    left: 120px;
+    z-index: 2;
+}
+
+#card4 {
+    left: 180px;
+    z-index: 3;
+}
+
+#card5 {
+    left: 240px;
+    z-index: 4;
+}
+
+#card6 {
+    left: 300px;
     z-index: 5;
 }
 
-.animationCard:nth-child(3) {
-    z-index: 4;
-    margin-left: 220px;
-}
-
-.animationCard:nth-child(4) {
-    z-index: 3;
-    margin-left: 320px;
-}
-.animationCard:nth-child(5) {
-    z-index: 2;
-    margin-left: 420px;
-}
-.animationCard:nth-child(6) {
-    z-index: 1;
-    margin-left: 520px;
-}
-
 #showcase {
+    height: 60vh;
+    width: 80vw;
     position: relative;
-    transform: scale(1.4);
+    transform: scale(1);
     margin: auto;
-    grid-row: 1 / -1;
-    grid-column: 2;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+@media (width > 320px) and (width < 655px) {
+    
+    #card1 {
+        bottom: 0px;
+        margin: auto;
+        margin-left: -20px;
+    }
+
+    #card2 {
+        bottom: -40px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
+
+    #card3 {
+        bottom: -80px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
+
+    #card4 {
+        bottom: -120px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
+
+    #card5 {
+        bottom: -160px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
+
+    #card6 {
+        bottom: -220px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
 }

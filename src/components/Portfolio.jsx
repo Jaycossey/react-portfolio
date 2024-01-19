@@ -36,25 +36,14 @@ const Portfolio = () => {
             <div className="w-screen 
                             h-screen 
                             bg-port
-                            p-20 
-                            overflow-hidden
-                            grid
-                            grid-cols-2
-                            grid-rows-2">
+                            p-10
+                            mt-10
+                            fixed
+                            flex
+                            flex-col">
                 
                 {/* Intro to portfolio text */}
                 <Card text={text.port} />
-
-                {/* Use Map to create an array of portfolio cards */}
-                {projectList.map((data) => {
-                    return (
-                        <Presentation key={data.key} 
-                                    project={data} 
-                                    onClick={handleClick}
-                                    // pass direction ref to handle bounding client rect for animation direction
-                                    ref={directionRef} />
-                    )
-                })}
 
                 {/* Main Presentation Project, pass ref as props to target for animation */}
                 <Presentation id="showcase" 
@@ -62,6 +51,24 @@ const Portfolio = () => {
                             ref={showcaseRef} 
                             onClick={openLink} />
 
+                <div id="cardCont" 
+                    className='flex
+                                m-auto
+                                h-1/3
+                                justify-center
+                                items-center'>
+                    {/* Use Map to create an array of portfolio cards */}
+                    {projectList.map((data) => {
+                        return (
+                            <Presentation id={"card" + data.key}
+                                        key={data.key} 
+                                        project={data} 
+                                        onClick={handleClick}
+                                        // pass direction ref to handle bounding client rect for animation direction
+                                        ref={directionRef} />
+                        )
+                    })}
+                </div>
             </div>
         </>
     );
