@@ -15,7 +15,7 @@ const animateSwap = (startpoint, endpoint) => {
 
     // after initial translation, trigger final placement.
     setTimeout(() => {
-        startpoint.style.transform = `translate(${endX}px, -${endY / 4}px) scale(1.4)`; // THIS ONE WORKS!!!!!
+        startpoint.style.transform = `translate(${endX}px, -${endY / 4}px) scale(1)`; // THIS ONE WORKS!!!!!
     }, 400)
 }
 

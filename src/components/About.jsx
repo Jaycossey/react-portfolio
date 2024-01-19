@@ -14,13 +14,12 @@ const About = () => {
             <div className='w-screen 
                             h-screen 
                             bg-slate-500 
-                            p-20 
+                            p-10 
                             text-center 
                             bg-port
-                            grid
-                            grid-cols-1
-                            grid-rows-4
-                            gap-5'>
+                            flex
+                            flex-col
+                            gap-5 overflow-y-auto'>
                 
                 {/* Profile photo container */}
                 <img src={profile}
@@ -32,7 +31,8 @@ const About = () => {
                                 m-auto
                                 row-span-2
                                 shadow-black
-                                shadow-xl' />
+                                shadow-xl
+                                relative' />
 
                 {/* Welcome Text Container */}
                 <Card text={text.about} />
