@@ -51,15 +51,17 @@ const Portfolio = () => {
                             ref={showcaseRef} 
                             onClick={openLink} />
 
-                <div className='flex
+                <div id="cardCont" 
+                    className='flex
                                 m-auto
-                                border-4
-                                w-full
-                                h-full'>
+                                h-1/3
+                                justify-center
+                                items-center'>
                     {/* Use Map to create an array of portfolio cards */}
                     {projectList.map((data) => {
                         return (
-                            <Presentation key={data.key} 
+                            <Presentation id={"card" + data.key}
+                                        key={data.key} 
                                         project={data} 
                                         onClick={handleClick}
                                         // pass direction ref to handle bounding client rect for animation direction

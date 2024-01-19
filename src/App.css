@@ -4,6 +4,10 @@
     --purple-2: rgba(360, 100, 360, 0.4);
 }
 
+body {
+    font-family: monospace;
+}
+
 /* NAVBAR STYLING -------------------------------------------------- */
 .radial-green {
     background-image: radial-gradient(ellipse at top, var(--purple), transparent 60%);
@@ -43,19 +47,14 @@ nav,
 }
 
 .animationCard {
-    height: 400px;
-    width: 400px;
     text-align: center;
     /* bottom: -160px; */
     /* position: absolute; */
-    /* margin: auto; */
+    margin: auto;
     /* margin-left: -20px; */
     transform: scale(0.6);
 }
 
-.animationCard {
-    
-}
 
 .animationCard:hover {
     transform: rotate(2deg) scale(0.7);
@@ -64,9 +63,99 @@ nav,
     cursor: url('./assets/icons/cursor-icon.png'), auto;
 }
 
-#showcase {
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6 {
     position: absolute;
-    margin: auto;
+    width: 400px;
+    height: 400px;
+}
+
+#card1 {
+    left: 0;
+    z-index: 0;
+}
+
+#card2 {
+    left: 60px;
+    z-index: 1;
+}
+
+#card3 {
+    left: 120px;
+    z-index: 2;
+}
+
+#card4 {
+    left: 180px;
+    z-index: 3;
+}
+
+#card5 {
+    left: 240px;
+    z-index: 4;
+}
+
+#card6 {
+    left: 300px;
+    z-index: 5;
+}
+
+#showcase {
+    height: 60vh;
+    width: 80vw;
+    position: relative;
     transform: scale(1);
-    margin-top: 20vh;
+    margin: auto;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+@media (width > 320px) and (width < 655px) {
+    
+    #card1 {
+        bottom: 0px;
+        margin: auto;
+        margin-left: -20px;
+    }
+
+    #card2 {
+        bottom: -40px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
+
+    #card3 {
+        bottom: -80px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
+
+    #card4 {
+        bottom: -120px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
+
+    #card5 {
+        bottom: -160px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
+
+    #card6 {
+        bottom: -220px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+    }
 }
