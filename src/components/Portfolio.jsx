@@ -52,10 +52,10 @@ const Portfolio = () => {
                             onClick={openLink} />
 
                 <div className='flex
-                            no-wrap
-                            absolute 
-                            bottom-0
-                            w-screen'>
+                                m-auto
+                                border-4
+                                w-full
+                                h-full'>
                     {/* Use Map to create an array of portfolio cards */}
                     {projectList.map((data) => {
                         return (
