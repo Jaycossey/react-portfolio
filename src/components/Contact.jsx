@@ -2,7 +2,7 @@ import Card from './Card';
 import Canvas from './Canvas';
 import text from '../textFiles/text';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareGithub, faLinkedin, faStackOverflow, faGitSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faStackOverflow, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 // Contact component, this will hold 3 animations as well as contact information
