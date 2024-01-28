@@ -4,13 +4,25 @@ import text from '../textFiles/text';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faStackOverflow, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { useState, useRef } from 'react';
 
 // Contact component, this will hold 3 animations as well as contact information
 const Contact = () => {
 
+    // Set state and ref for modal
+    const [toggleHidden, setToggleHidden] = useState('hidden');
+    const modalRef = useRef(null);
+
+    // Modal toggle hidden after email click
     const copyToClip = () => {
+        // copy email address to clipboard
         navigator.clipboard.writeText('jaycossey@live.com');
-        console.log("Copied To Clipboard");
+        
+        // toggle classnames with state
+        setToggleHidden('visible fadeOut');
+        setTimeout(() => {
+            setToggleHidden('hidden');
+        }, 2000);
     }
 
     // Return HTML 
@@ -71,6 +83,7 @@ const Contact = () => {
                                                     text-purple-500 
                                                     hover:scale-110 
                                                     cursorIcon' />
+                        <dialog id="copyModal" ref={modalRef} className={`emailCopy text-sm cursor-default ${toggleHidden}`}>Copied to Clipboard!</dialog>
                     </a>
                 </div>
                                 
