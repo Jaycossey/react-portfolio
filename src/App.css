@@ -30,7 +30,7 @@ nav,
 .navlink,
 .active,
 .cursorIcon {
-    cursor: url('./assets/icons/cursor-icon.png'), auto;
+    cursor: url('/assets/icons/cursor-icon.png'), auto;
     color: white;
 }
 
@@ -42,7 +42,7 @@ nav,
 /* PORTFOLIO STYLING  */
 
 .bg-port {
-    background-image: url('./assets/images/manada_background.png');
+    background-image: url('/assets/images/manada_background.png');
     background-position: fixed;
     background-size: cover;
 }
@@ -61,7 +61,7 @@ nav,
     transform: rotate(2deg) scale(0.7);
     z-index: 10 !important;
     transition-duration: 200ms;
-    cursor: url('./assets/icons/cursor-icon.png'), auto;
+    cursor: url('/assets/icons/cursor-icon.png'), auto;
 }
 
 #card1,
