@@ -15,7 +15,7 @@ const projectList = [
         techStack: "Node.JS, JavaScript, Markdown",
         key: "2",
         link: "https://github.com/Jaycossey/readme-generator"
-    },
+    }, 
     {
         title: "Team Profile Generator",
         description: "Node Project to practice file generation, using CLI inputs to generate a team viewer.",
