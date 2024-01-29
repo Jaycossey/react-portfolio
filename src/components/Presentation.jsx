@@ -24,7 +24,7 @@ const Presentation = forwardRef((props, ref) => {
             onClick={() => props.onClick(projects)}>
 
             {/* Image of project */}
-            <img src={`../assets/images/${props.project.image}`} 
+            <img src={projects.image}
                 alt="Screenshot of Code from the Main Presentation piece" 
                 className="h-40
                         m-auto
@@ -37,17 +37,17 @@ const Presentation = forwardRef((props, ref) => {
                         underline-offset-4 
                         mb-4 
                         mt-1">
-                {props.project.title}
+                {projects.title}
             </p>
             
             {/* Description */}
             <p>
-                {props.project.description}
+                {projects.description}
             </p>
             
             {/* Tech Used */}
             <p className="pt-2">
-                {props.project.techStack}
+                {projects.techStack}
             </p>
         </div>
     );
