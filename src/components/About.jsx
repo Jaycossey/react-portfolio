@@ -1,6 +1,6 @@
 import Card from './Card';
 import text from '../textFiles/text';
-import profile from '../assets/images/profile.png';
+import profile from '/assets/images/profile.png';
 
 // Also dont like this layout -- need to think how to show and hold this information, create a reusable card element and then handle
 // text data by passing in as props.
