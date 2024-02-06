@@ -35,7 +35,6 @@ const Portfolio = () => {
             {/* Page Container */}
             <div className="w-screen 
                             h-screen 
-                            bg-port
                             p-10
                             mt-10
                             fixed
