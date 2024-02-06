@@ -6,7 +6,6 @@ import ContactLinks from './ContactLinks';
 // Contact component, this will hold 3 animations as well as contact information
 const Contact = () => {
 
-
     // Return HTML 
     return (
         <>
@@ -23,11 +22,15 @@ const Contact = () => {
 
                 <ContactLinks />
                                 
-                {/* Canvas Elements for spritesheet animations
-                <Canvas spriteSheet="helloTest" 
-                        frameRate="7" 
-                        width="300px" 
-                        height="200px" /> */}
+                {/* Canvas Elements for spritesheet animations */}
+                {/* <Canvas spriteSheet="./assets/spritesheets/heart-sprite.png" 
+                        frameRate="7"
+                        frameCount="2"
+                        width="128px" 
+                        height="128px"
+                        spriteWidth="64"
+                        spriteHeight="64"
+                        stateCount="2" /> */}
 
             </div>
         </>

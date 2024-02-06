@@ -9,7 +9,7 @@ const NavBar = () => {
             <ul className='flex items-center justify-center gap-10'>
                 {/* if active/pending toggle classes to handle css styles */}
                 <NavLink 
-                    to="/About"
+                    to="/"
                     className={({isActive, isPending}) =>
                         isPending ? "pending" : isActive ? "active" : "navlink"
                     }
