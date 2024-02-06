@@ -19,11 +19,12 @@ body {
 }
 
 .active {
-    font-size: 2rem;
+    font-size: 1.8rem;
     border: 3px solid var(--purple);
     border-top: none;
     padding: 4px;
     background-color: var(--purple-2);
+    animation: fadeIn 1s linear 0s 1;
 }
 
 nav,
@@ -117,61 +118,6 @@ nav,
     margin-bottom: 40px;
 }
 
-/* CONTACT STYLES --------------------------------------------------- */
-
-
-
-/* MEDIA QUERIES ---------------------------------------------------- */
-
-@media (width > 320px) and (width < 655px) {
-    
-    #card1 {
-        bottom: 0px;
-        margin: auto;
-        margin-left: -20px;
-        z-index: 0;
-    }
-
-    #card2 {
-        bottom: -40px;
-        margin: auto;
-        margin-left: -20px;
-        left: 0;
-        z-index: 1;
-    }
-
-    #card3 {
-        bottom: -80px;
-        margin: auto;
-        margin-left: -20px;
-        left: 0;
-        z-index: 2;
-    }
-
-    #card4 {
-        bottom: -120px;
-        margin: auto;
-        margin-left: -20px;
-        left: 0;
-        z-index: 3;
-    }
-
-    #card5 {
-        bottom: -160px;
-        margin: auto;
-        margin-left: -20px;
-        left: 0;
-        z-index: 4;
-    }
-
-    #card6 {
-        bottom: -220px;
-        margin: auto;
-        margin-left: -20px;
-        left: 0;
-        z-index: 5;
-    }
-}
 
 /* CONTACT STYLES --------------- */
 
@@ -203,5 +149,62 @@ nav,
     }
     100% {
         opacity: 0;
+    }
+}
+
+
+/* MEDIA QUERIES ---------------------------------------------------- */
+
+@media (width >= 320px) and (width < 655px) {
+    
+    #card1 {
+        bottom: -70px;
+        margin: auto;
+        margin-left: -20px;
+        z-index: 0;
+    }
+
+    #card2 {
+        bottom: -110px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+        z-index: 1;
+    }
+
+    #card3 {
+        bottom: -150px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+        z-index: 2;
+    }
+
+    #card4 {
+        bottom: -190px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+        z-index: 3;
+    }
+
+    #card5 {
+        bottom: -230px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+        z-index: 4;
+    }
+
+    #card6 {
+        bottom: -270px;
+        margin: auto;
+        margin-left: -20px;
+        left: 0;
+        z-index: 5;
+    }
+
+    .bg-port {
+        overflow: auto;
     }
 }

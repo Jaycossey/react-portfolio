@@ -26,7 +26,7 @@ const Presentation = forwardRef((props, ref) => {
             {/* Image of project */}
             <img src={projects.image}
                 alt="Screenshot of Code from the Main Presentation piece" 
-                className="h-40
+                className="h-1/2
                         m-auto
                         rounded-md
                         border-2

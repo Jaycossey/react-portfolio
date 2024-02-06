@@ -23,8 +23,8 @@ const Contact = () => {
 
                 <ContactLinks />
                                 
-                {/* Canvas Elements for spritesheet animations
-                <Canvas spriteSheet="helloTest" 
+                {/* Canvas Elements for spritesheet animations */}
+                {/* <Canvas spriteSheet="helloTest" 
                         frameRate="7" 
                         width="300px" 
                         height="200px" /> */}
