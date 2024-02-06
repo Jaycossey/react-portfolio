@@ -42,7 +42,8 @@ nav,
 
 /* PORTFOLIO STYLING  */
 
-.bg-port {
+.bg-port,
+body {
     background-image: url('/assets/images/manada_background.png');
     background-position: fixed;
     background-size: cover;
