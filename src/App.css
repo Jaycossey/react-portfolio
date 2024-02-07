@@ -107,8 +107,8 @@ nav,
 }
 
 #showcase {
-    height: 60vh;
     width: 80vw;
+    height: 40vh;
     position: relative;
     transform: scale(1);
     margin: auto;
@@ -202,6 +202,10 @@ nav,
         margin-left: -20px;
         left: 0;
         z-index: 5;
+    }
+
+    #showcase {
+        height: 70vh;
     }
 
     .bg-port {
