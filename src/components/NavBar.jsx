@@ -4,7 +4,13 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
     return (
         // Nav container
-        <nav className='w-screen h-14 fixed z-10 radial-green bg-black'>
+        <nav className='w-screen 
+                        h-14 
+                        fixed 
+                        z-10 
+                        radial-green 
+                        bg-black'>
+                            
             {/* list of navlinks */}
             <ul className='flex items-center justify-center gap-10'>
                 {/* if active/pending toggle classes to handle css styles */}
