@@ -35,11 +35,12 @@ const Portfolio = () => {
             {/* Page Container */}
             <div className="w-screen 
                             h-screen 
+                            bg-port
                             p-10
-                            mt-10
                             fixed
                             flex
-                            flex-col">
+                            flex-col
+                            pt-20">
                 
                 {/* Intro to portfolio text */}
                 <Card text={text.port} />

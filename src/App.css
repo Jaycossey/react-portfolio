@@ -42,8 +42,7 @@ nav,
 
 /* PORTFOLIO STYLING  */
 
-.bg-port,
-body {
+.bg-port {
     background-image: url('/assets/images/manada_background.png');
     background-position: fixed;
     background-size: cover;
@@ -108,8 +107,8 @@ body {
 }
 
 #showcase {
-    height: 60vh;
     width: 80vw;
+    height: 40vh;
     position: relative;
     transform: scale(1);
     margin: auto;
@@ -203,6 +202,10 @@ body {
         margin-left: -20px;
         left: 0;
         z-index: 5;
+    }
+
+    #showcase {
+        height: 70vh;
     }
 
     .bg-port {

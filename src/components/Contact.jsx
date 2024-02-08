@@ -22,15 +22,9 @@ const Contact = () => {
 
                 <ContactLinks />
                                 
-                {/* Canvas Elements for spritesheet animations */}
-                {/* <Canvas spriteSheet="./assets/spritesheets/heart-sprite.png" 
-                        frameRate="7"
-                        frameCount="2"
-                        width="128px" 
-                        height="128px"
-                        spriteWidth="64"
-                        spriteHeight="64"
-                        stateCount="2" /> */}
+                {/* Canvas Elements for spritesheet animations, I want this to be simple enough to re-use needs further planning and translation
+                from vanilla JS  */}
+                {/* <Canvas /> */}
 
             </div>
         </>
