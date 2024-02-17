@@ -35,6 +35,10 @@ nav,
     color: white;
 }
 
+.navIcon {
+    
+}
+
 /* ABOUT STYLING */
 .shadowBg {
     background-image: radial-gradient(ellipse at right, white 5%, transparent 60%);
@@ -62,7 +66,7 @@ nav,
     transform: rotate(2deg) scale(0.7);
     z-index: 10 !important;
     transition-duration: 200ms;
-    cursor: url('/assets/icons/cursor-icon.png'), auto;
+    cursor: url('/assets/icons/cursor-icon.png'), pointer;
 }
 
 #card1,
@@ -210,5 +214,16 @@ nav,
 
     .bg-port {
         overflow: auto;
+    }
+
+    .active,
+    .navlink {
+        display: none;
+    }
+}
+
+@media (width >= 655) {
+    .navIcon {
+        display: none;
     }
 }

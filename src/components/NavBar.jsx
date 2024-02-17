@@ -36,6 +36,7 @@ const NavBar = () => {
                 ><li>Contact</li></NavLink>
                 
             </ul>
+
         </nav>
     );
 }
