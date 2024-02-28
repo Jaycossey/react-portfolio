@@ -12,13 +12,15 @@ const Canvas = (props) => {
 
     // get current and context (ctx)
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    console.log(ctx);
+    // const ctx = canvas.getContext('2d');
+    // console.log(ctx);
 
     // I need to handle the name parameter to assign spritesheets
 
+
     return (
-        <canvas ref={canvasRef} width={width} height={height} className="border-2"></canvas>
+        <></>
+        // <canvas ref={canvasRef} width={width} height={height} className="border-2"></canvas>
     );
 }
 

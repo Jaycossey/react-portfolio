@@ -1,6 +1,14 @@
 // Array of project objects
 const projectList = [
     {
+        title: "P & L Tunes",
+        description: "Website created for P&L Tunes, a music review company, the client requested a mobile first site to display their reviews and staff, as well as including a contact form.",
+        image: "/assets/images/pandl.png",
+        techStack: "HTML, CSS, JavaScript, TailwindCSS, React.JS",
+        key: "6",
+        link: "http://pandltunes.co.uk/"
+    },
+    {
         title: "Portfolio Generator",
         description: "Node project to automate portfolio presentation sites, created for more efficient presentation sites for employers, takes CLI to handle generation.",
         image: "/assets/images/portfolioGen.png",
@@ -39,14 +47,6 @@ const projectList = [
         techStack: "HTML, CSS, JavaScript, React.JS, TailwindCSS, npm",
         key: "5",
         link: "https://mayflyoasis.netlify.app/"
-    },
-    {
-        title: "P & L Tunes",
-        description: "Website created for P&L Tunes, a music review company, the client requested a mobile first site to display their reviews and staff, as well as including a contact form.",
-        image: "/assets/images/pandl.png",
-        techStack: "HTML, CSS, JavaScript, BootstrapCSS",
-        key: "6",
-        link: "https://github.com/Jaycossey/pandl-reviews"
     }
 ];
 
