@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Canvas from './Canvas';
 
 // Navbar component
 const NavBar = () => {
@@ -36,6 +37,9 @@ const NavBar = () => {
                 ><li>Contact</li></NavLink>
                 
             </ul>
+
+            <Canvas name={"heart-sprite"} width={56} height={56} />
+
         </nav>
     );
 }

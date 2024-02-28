@@ -1,5 +1,4 @@
 import Card from './Card';
-import Canvas from './Canvas';
 import text from '../textFiles/text';
 import ContactLinks from './ContactLinks';
 
@@ -21,10 +20,7 @@ const Contact = () => {
                 <Card text={text.contact} />
 
                 <ContactLinks />
-                                
-                {/* Canvas Elements for spritesheet animations, I want this to be simple enough to re-use needs further planning and translation
-                from vanilla JS  */}
-                {/* <Canvas /> */}
+
 
             </div>
         </>
